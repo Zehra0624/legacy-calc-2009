@@ -11,9 +11,9 @@ The goal is to:
 
 ## How to Build
 
-Open terminal in the project folder and run:
+Open gist link, copy code into src/main.cpp and run in terminal using:
 
-g++ -std=c++11 *.cpp -o calc
+g++ -std=c++11 src/main.cpp -o calc
 
 ## How to Run
 
