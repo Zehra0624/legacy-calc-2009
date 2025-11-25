@@ -1,0 +1,111 @@
+\doxysection{Loan Class Reference}
+\hypertarget{class_loan}{}\label{class_loan}\index{Loan@{Loan}}
+
+
+Stores loan details and calculates total, interest and monthly payment.  
+
+
+
+
+{\ttfamily \#include $<$Loan.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_loan_a11f4a156ba1c3b5ac42182a4ea37b292}{Loan}} (long double la=0, long double ir=0, long double ny=0)
+\begin{DoxyCompactList}\small\item\em Constructor to initialize loan values. \end{DoxyCompactList}\item 
+long double \mbox{\hyperlink{class_loan_a3caef48df0aa1524b9e05ed0a72da1da}{calculate\+Total\+Amount}} () const
+\begin{DoxyCompactList}\small\item\em Calculates total amount payable (principal + interest). \end{DoxyCompactList}\item 
+long double \mbox{\hyperlink{class_loan_af5b1d81089c139a2aecb909ecd635876}{calculate\+Monthly\+Payment}} () const
+\begin{DoxyCompactList}\small\item\em Calculates monthly payment (EMI). \end{DoxyCompactList}\item 
+long double \mbox{\hyperlink{class_loan_a0623f080fa715155087451749a0b87b9}{calculate\+Interest}} () const
+\begin{DoxyCompactList}\small\item\em Calculates total interest payable. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_loan_af280fdccd39c082f19d9ce76681b5e00}\label{class_loan_af280fdccd39c082f19d9ce76681b5e00} 
+long double {\bfseries loan\+\_\+amount}
+\item 
+\Hypertarget{class_loan_af9d0eaedea7a4e81b7ce0bffa70c551e}\label{class_loan_af9d0eaedea7a4e81b7ce0bffa70c551e} 
+long double {\bfseries interest\+\_\+rate}
+\item 
+\Hypertarget{class_loan_ac4bb3cd82507349c1875adc8040b9e2a}\label{class_loan_ac4bb3cd82507349c1875adc8040b9e2a} 
+long double {\bfseries number\+\_\+of\+\_\+years}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Stores loan details and calculates total, interest and monthly payment. 
+
+\label{doc-constructors}
+\Hypertarget{class_loan_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_loan_a11f4a156ba1c3b5ac42182a4ea37b292}\index{Loan@{Loan}!Loan@{Loan}}
+\index{Loan@{Loan}!Loan@{Loan}}
+\doxysubsubsection{\texorpdfstring{Loan()}{Loan()}}
+{\footnotesize\ttfamily \label{class_loan_a11f4a156ba1c3b5ac42182a4ea37b292} 
+Loan\+::\+Loan (\begin{DoxyParamCaption}\item[{long double}]{la}{ = {\ttfamily 0}, }\item[{long double}]{ir}{ = {\ttfamily 0}, }\item[{long double}]{ny}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+
+
+Constructor to initialize loan values. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em la} & \doxylink{class_loan}{Loan} amount \\
+\hline
+{\em ir} & Interest rate \\
+\hline
+{\em ny} & Number of years \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_loan_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_loan_a0623f080fa715155087451749a0b87b9}\index{Loan@{Loan}!calculateInterest@{calculateInterest}}
+\index{calculateInterest@{calculateInterest}!Loan@{Loan}}
+\doxysubsubsection{\texorpdfstring{calculateInterest()}{calculateInterest()}}
+{\footnotesize\ttfamily \label{class_loan_a0623f080fa715155087451749a0b87b9} 
+long double Loan\+::calculate\+Interest (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Calculates total interest payable. 
+
+\begin{DoxyReturn}{Returns}
+long double Total interest 
+\end{DoxyReturn}
+\Hypertarget{class_loan_af5b1d81089c139a2aecb909ecd635876}\index{Loan@{Loan}!calculateMonthlyPayment@{calculateMonthlyPayment}}
+\index{calculateMonthlyPayment@{calculateMonthlyPayment}!Loan@{Loan}}
+\doxysubsubsection{\texorpdfstring{calculateMonthlyPayment()}{calculateMonthlyPayment()}}
+{\footnotesize\ttfamily \label{class_loan_af5b1d81089c139a2aecb909ecd635876} 
+long double Loan\+::calculate\+Monthly\+Payment (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Calculates monthly payment (EMI). 
+
+\begin{DoxyReturn}{Returns}
+long double Monthly installment 
+\end{DoxyReturn}
+\Hypertarget{class_loan_a3caef48df0aa1524b9e05ed0a72da1da}\index{Loan@{Loan}!calculateTotalAmount@{calculateTotalAmount}}
+\index{calculateTotalAmount@{calculateTotalAmount}!Loan@{Loan}}
+\doxysubsubsection{\texorpdfstring{calculateTotalAmount()}{calculateTotalAmount()}}
+{\footnotesize\ttfamily \label{class_loan_a3caef48df0aa1524b9e05ed0a72da1da} 
+long double Loan\+::calculate\+Total\+Amount (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Calculates total amount payable (principal + interest). 
+
+\begin{DoxyReturn}{Returns}
+long double Total amount to pay 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/Loan.\+h\item 
+src/Loan.\+cpp\end{DoxyCompactItemize}
