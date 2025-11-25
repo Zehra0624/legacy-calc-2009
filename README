@@ -13,17 +13,11 @@ The goal is to:
 
 Open gist link, copy code into src/main.cpp and run in terminal using:
 
-g++ -std=c++11 src/main.cpp -o calc
+g++ -std=c++11 src/main.cpp src/Loan.cpp -o calc
 
 ## How to Run
 
-./calc -cp -a 100000 -i 12 -n 360
-
-Options:
--a : loan amount
--i : interest rate
--n : number of payments
--cp: calculate monthly payment
+./calc 
 
 ## New Files Added
 
@@ -32,6 +26,19 @@ Options:
 - config.txt
 - test/test_emi.cpp (unit tests)
 
+## How to Build and Run Tests
+
+g++ -std=c++11 src/Loan.cpp test/test_emi.cpp -o test_emi
+./test_emi
+
+## Updations
+	•	Bug Fix 1: Input validation
+	•	Bug Fix 2: Long double usage and step by step calculations
+	•	Bug Fix 3: Default values using config.txt
+	•	Refactored into multiple source files
+	•	Added unit tests
+	•	Added Doxygen documentation
+    
 -----------------------------------------------------------------
 
 A simple loan calculator written in C++ using a Qt GUI.
