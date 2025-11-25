@@ -10,7 +10,7 @@ Loan::Loan(long double la, long double ir, long double ny) {
 // Total amount to be paid (principal + interest)
 long double Loan::calculateTotalAmount() const {
     long double interest = loan_amount * (interest_rate / 100.0L) * number_of_years;
-    return loan_amount * number_of_years + interest;
+    return loan_amount + interest;
 }
 
 // Total interest
