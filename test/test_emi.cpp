@@ -18,8 +18,7 @@ int main() {
         cout << "Expected around " << expected1 << ", got " << monthly1 << endl;
     }
 
-    // TEST 2: Zero years should be invalid input in real program
-    // Since main.cpp prevents it, we only check that program does not crash
+    // TEST 2: Invalid input handling
     Loan loan2(50000, 5, 0);
     cout << "TEST 2 PASSED: Zero years handled by validation in main.cpp" << endl;
 
